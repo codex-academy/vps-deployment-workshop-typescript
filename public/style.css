@@ -1,0 +1,55 @@
+body {
+    background-color: SteelBlue;
+    color: white;
+    font-family: sans-serif;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.counter {
+    margin: 1em;
+    font-size: 300%;
+    text-align: center;
+}
+
+.error {
+    color: orange;
+}
+
+input[type="text"] {
+    padding: 0.25em;
+    font-size: 125%;
+}
+
+.buttons {
+    display: flex;
+}
+
+input[type="submit"], input[type="button"] {
+    padding: 0.5em;
+    background-color: orange;
+    min-width: 7em;
+    border-radius: 0.5em;
+}
+
+.language {
+    padding: 1em;
+}
+
+.mt-05 {
+    margin-top: 0.5em;
+}
+
+.ml-05 {
+    margin-left: 0.5em;
+}
+
