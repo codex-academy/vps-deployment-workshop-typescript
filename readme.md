@@ -33,7 +33,7 @@ See if you can access the application from the browser at `http://localhost:8081
 * Create a server on Digital Ocean:
 
     * I sent you an invitation
-     * Create an Ubuntu $5 server at a location of your choosing
+     * Create an `Ubuntu $4 server` (check Amsterdam & Regular SSD disk type) at a location of your choosing
     * Cloud servers are called `droplets`
     * Use password authentication
     * Rename your server to be called "YourFirstName-Server" in Digital Ocean
@@ -46,12 +46,12 @@ See if you can access the application from the browser at `http://localhost:8081
     * Run this command on your server: `apt update` to ensure you got all the latest packages. It will take a while.
     * install NodeJS on the server 
         * using `nvm`:
-            * first install [nvm](https://github.com/nvm-sh/nvm)
-            * Use this command `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`
-            * log `in` and `out` of the server to make sure the `node` command work from the terminal
-            * then install NodeJS version 18 or higher - `nvm install 18`
-            * after this command the `node & npm` commands should be available from the terminal
-        * after running the command the `node` will be available on your server.
+            * first install [nvm](https://github.com/nvm-sh/nvm) - `Node Version Manager`,
+            * Use this command `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`,
+            * after running the command the `node` will be available on your server,
+            * log `in` and `out` of the server to make sure the `node` command work from the terminal,
+            * then install NodeJS version 18 or higher - `nvm install 18`,
+            * after this command the `node & npm` commands should be available from the terminal.
     * install `git` on the server using: `apt install git` 
         - **note** git was installed on my server by default.
 
@@ -84,24 +84,27 @@ See if you can access the application from the browser at `http://localhost:8081
 ```sh
     npm install -g pm2
 ```
-  * Run your app with `pm2` using this command
+
+> Be sure to be in the `vps-deployment-workshop-typescript`folder in the `apps` folder - `cd apps/vps-deployment-workshop-typescript`
+    
+  * Run your app with `pm2` using this command:
 
 ```sh
    pm2 run dist/index.js --name "ts-user-counter"
 ```
 
-  * Use the `pm2 list` command to see if the process is running.
-  * You can stop it using the `pm2 stop` command = `pm2 stop 0` should stop it or `pm2 stop ts-user-counter`
+  * Use the `pm2 list` command to see if the `ts-user-counter` process is running.
+  * You can stop it using the `pm2 stop` command - `pm2 stop 0` or `pm2 stop ts-user-counter` should stop it.
   * Using `pm2` your app is now running in the background. 
-  * You can logout of your server using the `exit` command
+  * You can logout of your server using the `exit` command.
+  * The app will run in the background if you disconnect from the server.
   * You should still be able to access your application at `http://your-server-ip-address:4567` and `http://yourname.projectcodex.net`.
-
 
 ## Screen shots & list of commands used
 
 Please ensure you have screenshots of:
 
-* your Digital Configuration setup in Digital Ocean,
+* your Server/Droplet Configuration setup in Digital Ocean,
 * showing your deployed app running on your domain,
 * the terminal showing your app running.
 
@@ -109,5 +112,5 @@ Run the `history` command to keep a list of all the commands you used during thi
 
 ## Delete your server
 
-Please delete your server in Digital Ocean.
+Please delete your server/droplet in Digital Ocean.
  
