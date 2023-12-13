@@ -71,7 +71,7 @@ See if you can access the application from the browser at `http://localhost:8081
     * run these maven commands:
         * `npm install`
         * `npm start`
-        * At this point your app should be running at: `http://your-server-ip-address:4567`
+        * At this point your app should be running at: `http://your-server-ip-address:8081`
         * See if others were able to access your application
         * Please take some screenshots of :
             * your deployed application running the browser
