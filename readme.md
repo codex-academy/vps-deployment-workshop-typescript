@@ -90,7 +90,7 @@ See if you can access the application from the browser at `http://localhost:8081
   * Run your app with `pm2` using this command:
 
 ```sh
-   pm2 run dist/index.js --name "ts-user-counter"
+   pm2 start dist/index.js --name "ts-user-counter"
 ```
 
   * Use the `pm2 list` command to see if the `ts-user-counter` process is running.
